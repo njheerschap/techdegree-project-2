@@ -1,0 +1,405 @@
+/* ---- Base Styles ----*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    background-color: #f2f2f2 ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #404040;
+}
+
+.top-nav a,
+.bottom-nav a {
+    text-transform: uppercase;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+/* ----  ----*/
+
+header,
+main,
+footer {
+    margin: 0 15px;
+}
+
+header {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    background-color: #00b8e6;
+}
+
+nav {
+    text-align: center;
+    font-weight: 500;
+}
+
+.top-nav li {
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 5px 10px;
+}
+
+h1 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1.75rem;
+    color: white;
+    text-shadow:  1px 1px #000 ;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+main {
+    margin-bottom: 40px;
+}
+
+main,
+footer {
+    text-align: center;
+    line-height: 1.5rem;
+    color: #404040;
+}
+
+footer {
+    
+    padding-top: 5px;
+}
+main p {
+    padding: 0 10px;
+}
+
+.headshot {
+    width: 75%;
+    margin-top: 30px;
+}
+
+#skills {
+    padding-top: 10px;
+}
+
+#skills li {
+    display: inline-block;
+    width: calc(48% - 40px);
+    margin: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #9933ff;
+    color: white;
+    font-weight: 500;
+}
+
+#skills li:nth-child(2),
+#skills li:nth-child(3) {
+    background-color: #ff8000;
+}
+
+.portfolio-head {
+    margin: 75px 75px 50px 75px;
+}
+
+section img {
+    margin: 20px 0;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.contact-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.end-nav {
+    text-align: center;
+    font-weight: 500;
+    border-top: 1px solid black;
+}
+
+.end-nav p {
+    text-align: left;
+}
+
+.end-nav li {
+    text-align: right;
+}
+
+.bottom-nav {
+    display: inline-block;
+    width: 50%;
+    margin: 20px -4px;
+}
+
+.lg-scrn {
+    display: none;
+}
+
+address {
+    font-weight: 500;
+    font-style: normal;
+}
+
+#phone,
+#email {
+    display: inline-block;
+    font-weight: 200;
+}
+
+
+@media(min-width: 768px) {
+
+    header {
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+    }
+
+    main {
+        margin-bottom: 25px;
+    }
+
+    .top-nav {
+        color: white;
+    }
+
+    .top-nav li {
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    .top-nav a {
+        color: white;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 75px 0;
+    }
+
+    #profile {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;  
+    }
+
+    .intro-p {
+        flex: 0 0 calc(50% - 50px);
+        justify-content: flex-end;
+        margin:0;
+    }
+
+    .headshot {
+        margin: 0;
+        width: 85%;
+    }
+
+    #intro {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #portfolio {
+        margin-bottom: 0;
+    }
+
+    .portfolio-head  {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+
+    .portfolio-container {
+        flex: 0 0 calc(50% - 10px);
+        margin: 10px 5px;;
+    }
+
+    #profile img,
+    #profile p {
+        flex-basis: 50%;
+    }
+
+    #contact {
+        max-width: 75%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    #contact h4 {
+        font-size: .75rem;
+        margin-bottom: 50px;
+    }
+
+    .end-nav {
+        margin-top: 50px;
+    }
+
+    address {
+        margin: 50px;
+        padding: 20px;
+    }
+
+    .contact-info {
+        margin: 20px 0;
+    }
+}
+
+
+@media(min-width:1024px) {
+
+    header {
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        height: 15vh;
+    }
+
+    main,
+    footer {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    main {
+        margin-bottom: 25px;
+    }
+
+    h1,
+    .nav-list {
+        display: inline-block;
+    }
+
+    h1 {
+        width: 60%;
+        text-align: left;
+        font-size: 2.2rem;
+    }
+
+
+    .top-nav {
+        color: white;
+        margin-top: 5vh;
+    }
+
+    .top-nav li {
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    .top-nav a {
+        color: white;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 75px 0;
+    }
+
+    #profile {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 25px;  
+    }
+
+    .intro-p {
+        flex: 0 0 calc(50% - 50px);
+        justify-content: flex-end;
+        margin:0;
+        font-size: 1.5rem;
+    }
+
+    .headshot {
+        margin: 0;
+        width: 85%;
+    }
+
+    #intro {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    #portfolio {
+        margin-bottom: 0;
+    }
+
+    .portfolio-head  {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+
+    .portfolio-container {
+        flex: 0 0 calc(33% - 15px);
+        margin: 10px 5px;;
+    }
+
+    #profile img,
+    #profile p {
+        flex-basis: 50%;
+    }
+
+    #contact {
+        max-width: 75%;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
+    #contact h4 {
+        font-size: .75rem;
+        margin-bottom: 50px;
+    }
+
+    .end-nav {
+        margin-top: 50px;
+    }
+
+    address {
+        margin: 50px;
+        padding: 20px;
+    }
+
+    .contact-info {
+        margin: 20px 0;
+    }
+
+    .end-nav {
+        margin: 50px 20px 0 20px;
+    }
+
+    .lg-scrn {
+        display: inline-block;
+        width: 32%;
+        padding: 10px;
+        margin: 5px 0;
+        text-align: right;
+        font-weight: 500;
+        text-align: right;
+    }
+
+    
+
+    .top {
+        display: none;
+    }
+
+
+}
